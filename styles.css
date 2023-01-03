@@ -12,6 +12,7 @@ html, body {
     height: 100%;
     font-family: "Jost", sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -22,12 +23,13 @@ main {
 }
 
 section {
-    padding: 0 15%;
+    padding: 15rem 15% 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-nav {
-    padding-top: 40px;
-}
 
 strong { 
     font-weight: 500;
@@ -53,30 +55,29 @@ h1 {
     padding-bottom: 0;
     padding-top: 0;
     font-weight: 600;
-    line-height: 6.25rem;
+    margin: 0;
     padding-bottom: 1rem;
 }
 
 h2 {
     font-weight: 500;
-    font-size: 48px;
-    line-height: 69px;
+    font-size: 3rem;
 }
 
 h3 {
     font-size: 2rem;
     font-weight: 400;
-    line-height: 3.4rem;
+    margin: 0;
+    padding: 1rem 0 2rem 0;
 }
 
 p {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .cta {
-    width: 241px;
-    min-height: 72px;
-    font-size: 32px;
-    border-radius: 38.5px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.7rem;
+    border-radius: 9999px;
     border: none;
     cursor: pointer;
 }
@@ -96,11 +97,8 @@ p {
 }
 
 .testimonial-image {
-    max-width: 200px;
+    max-width: 12.5rem;
     border-radius: 50%;
-    border: 4px solid;
-    border-image-source: var(--grad);
-    background: var(--grad);
 }
 
 @media only screen and (min-width: 64em) {
@@ -118,7 +116,7 @@ p {
         gap: 2rem;
     }
 
-    .desktop-align-right {
+    .desktop-align-left  {
         text-align: start;
     }
 
