@@ -55,7 +55,6 @@ h1 {
     font-weight: 600;
     line-height: 6.25rem;
     padding-bottom: 1rem;
-    
 }
 
 h2 {
@@ -104,13 +103,26 @@ p {
     background: var(--grad);
 }
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 64em) {
     .flex-wrapper {
         display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .grid-wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        align-items: center;
         gap: 2rem;
     }
 
     .desktop-align-right {
         text-align: start;
+    }
+
+    .logo-sales {
+        max-width: 24.4rem;
     }
 }
