@@ -17,7 +17,7 @@ html, body {
 
 main {
     font-family: "Jost", sans-serif;
-    margin: auto ;
+    margin: auto;
     text-align: center;
     width: 100%;
 }
@@ -28,26 +28,6 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-
-strong { 
-    font-weight: 500;
-}
-
-.underline {
-    text-decoration: underline ;
-}
-
-.hero {
-    margin: auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    min-width: 100%;
-    background: var(--grad);
-    color: white;
 }
 
 h1 {
@@ -74,6 +54,15 @@ h3 {
 p {
     font-size: 1.5rem;
 }
+
+strong { 
+    font-weight: 500;
+}
+
+.underline {
+    text-decoration: underline ;
+}
+
 .cta {
     padding: 0.8rem 1.5rem;
     font-size: 1.7rem;
@@ -82,8 +71,15 @@ p {
     cursor: pointer;
 }
 
-.logo-sales {
-    max-width: 15.4rem;
+.hero {
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100%;
+    background: var(--grad);
+    color: white;
 }
 
 .white {
@@ -94,6 +90,10 @@ p {
 .black {
     background-color: black;
     color: white;
+}
+
+.logo-sales {
+    max-width: 15.4rem;
 }
 
 .testimonial-image {
