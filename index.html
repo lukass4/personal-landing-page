@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/fa617c80f0.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <title>lukasJ Web design</title>
 </head>
 <body>
@@ -18,8 +19,19 @@
                 <li class="header-li"><a href="/wip">blog</a></li>
             </ul>
         </nav>
-        <a class="nav-link" href="#what-are-you-waiting-for"><button class="btn small white-btn">Get in touch</button></a>
+        <a class="nav-link nav-button" href="#what-are-you-waiting-for"><button class="btn small white-btn">Get in touch</button></a>
+        <a href="#" class="toggle-button" onclick="menu()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
     </header>
+    <div class="nav-mobile-slidein">
+        <a onclick="menu()" ><i class="fa-solid fa-xmark slidein-exit"></i></a>
+        <ul>
+            <li class="header-li-mobile"><a href="/wip">about</a></li>
+            <li class="header-li-mobile"><a href="/wip">portfolio</a></li>
+            <li class="header-li-mobile"><a href="/wip">blog</a></li>
+        </ul>
+    </div>
     <main>
         <section id="hero" class="hero">
             <div>

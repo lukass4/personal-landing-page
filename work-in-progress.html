@@ -5,20 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fa617c80f0.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <title>WIP</title>
 </head>
 <body>
     <header>
         <a class="nav-link" href="/" ><img src="src/logo.png" /></a>
         <nav>
-            <ul class="white">
-                <li class="header-li-black"><a>about</a></li>
-                <li class="header-li-black"><a>portfolio</a></li>
-                <li class="header-li-black"><a>blog</a></li>
+            <ul>
+                <li class="header-li header-li-black"><a href="/wip">about</a></li>
+                <li class="header-li header-li-black"><a href="/wip">portfolio</a></li>
+                <li class="header-li header-li-black"><a href="/wip">blog</a></li>
             </ul>
         </nav>
-        <a class="nav-link" href="/#what-are-you-waiting-for"><button class="btn small black-btn">Get in touch</button></a>
+        <a class="nav-link nav-button" href="#what-are-you-waiting-for"><button class="btn small black-btn">Get in touch</button></a>
+        <a href="#" class="toggle-button toggle-button-black" onclick="menu()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
     </header>
+    <div class="nav-mobile-slidein">
+        <a onclick="menu()" ><i class="fa-solid fa-xmark slidein-exit"></i></a>
+        <ul>
+            <li class="header-li-mobile"><a href="/wip">about</a></li>
+            <li class="header-li-mobile"><a href="/wip">portfolio</a></li>
+            <li class="header-li-mobile"><a href="/wip">blog</a></li>
+        </ul>
+    </div>
     <main>
         <section class="wip">
             <h2>Whoops!</h2>
@@ -26,31 +39,31 @@
             <a href="/"><button class="btn black-btn cta-margin">Go back to main page</button></a>
         </section>
     </main>
-    <footer>
-        <div class="flex-wrapper">
-            <div class="col">
-                <p class="nav-head">Navigation</p>
-                <p>home</p>
-                    <p>portfolio</p>
-                    <p>about me</p>
-                    <p>blog</p>
-                    <p>contact</p>
-                </p>
-            </div>
-            <div class="col">
-                <p class="nav-head">Contact</p>
-                <p>lukas@lukasj.co.uk</p>
-                <p>7368658215</p>
-                <a href="https://twitter.com/_lukas_j"><button></button></a>
-                <a href="https://github.com/lukass4"><button></button></a>
-                <a href=""><button></button></a>
-            </div>
-            <div class="col">
-                <p class="nav-head">Other Pages</p>
-                <p>blog</p>
-                <p>business card</p>
+    <footer id="#footer">
+        <div class="col">
+            <p class="nav-head">Navigation</p>
+                <p><a href="/#hero">home</a></p>
+                <p><a href="/wip">portfolio</a></p>
+                <p><a href="/wip">about me</a></p>
+                <p><a href="/wip">blog</a></p>
+                <p><a href="/contact">contact</a></p>
+            </p>
+        </div>
+        <div class="col">
+            <p class="nav-head">Contact</p>
+            <p><a href="mailto:lukas@lukasj.co.uk">lukas@lukasj.co.uk</a></p>
+            <p><a href="https://wa.me/7368658215" target="_blank">7368658215</a></p>
+            <div class="footer-btns-flex">
+                <a href="https://twitter.com/_lukas_j" target="_blank"><button class="circle-btn"><i class="fa-brands fa-twitter"></i></button></a>
+                <a href="https://github.com/lukass4" target="_blank"><button class="circle-btn"><i class="fa-brands fa-github"></i></button></a>
+                <a href="https://instagram.com/lukasjdev" target="_blank"><button class="circle-btn"><i class="fa-brands fa-instagram"></i></button></a>
             </div>
         </div>
-    </footer>
+        <div class="col">
+            <p class="nav-head">Other Pages</p>
+            <p><a href="/wip">blog</a></p>
+            <p><a href="https://card.lukasj.co.uk">business card</a></p>
+        </div>
+</footer>
 </body>
 </html>
