@@ -16,6 +16,8 @@ html, body {
     scroll-behavior: smooth;
 }
 
+/* Navbar */
+
 header {
     position: absolute;
     margin: 2.5rem 15%;
@@ -44,6 +46,13 @@ header img {
     cursor: pointer;
 }
 
+.header-li-black {
+    display: inline-block;
+    margin: 0 3.75rem;
+    cursor: pointer;
+    color: black;
+}
+
 .header-li a {
     transition: all 0.3s ease 0s;
 }
@@ -51,6 +60,8 @@ header img {
 .header-li a:hover {
     color: #e4e4e4;
 }
+
+/* Main decelerations */
 
 main {
     font-family: "Jost", sans-serif;
@@ -74,27 +85,28 @@ section {
     gap: 2rem;
 }
 
+/* Text tags */
+
 h1 {
     font-size: 4rem;
     font-weight: 600;
-    margin: 5rem 0 0 0;
 }
 
 h2 {
     font-weight: 500;
     font-size: 3rem;
-    margin: 0 0 2rem 0;
 }
 
 h3 {
     font-size: 2rem;
     font-weight: 400;
-    margin: 2rem 0 2rem 0;
 }
 
 p {
     font-size: 1.5rem;
 }
+
+/* Text effects */
 
 strong { 
     font-weight: 500;
@@ -108,7 +120,9 @@ a {
     text-decoration: none;
 }
 
-.cta {
+/* Global elements */
+
+.btn {
     padding: 0.8rem 1.5rem;
     font-size: 1.7rem;
     font-family: "Jost", sans-serif;
@@ -118,7 +132,7 @@ a {
     transition: all 0.3s ease 0s;
 }
 
-cta:visited, cta:hover {
+btn:visited, btn:hover {
     text-decoration: none;
 }
 
@@ -126,29 +140,47 @@ cta:visited, cta:hover {
     font-size: 1.5rem;
 }
 
-.hero .cta {
+.hero .btn {
     margin: 0 0 5rem 0;
 }
 
-.white {
-    background-color: white;
+.white-btn {
+    background-color: #ffffff;
     color: black;
 }
 
-.white:hover {
+.white-btn:hover {
     background-color: #e4e4e4;
 }
 
-.black {
+.black-btn {
     background-color: black;
     color: white;
+}
+
+.cta-margin {
     margin-top: 2rem;
 }
 
-.black:hover {
+.black-btn:hover {
     background-color: #1b1b1b;
     color: #e4e4e4;
 }
+
+/* Hero */
+
+.hero h1 {
+    margin: 5rem 0 0 0;
+}
+
+.hero h3 {
+    margin: 2rem 0 2rem 0;
+}
+
+.main-heading {
+    margin: 0 0 2rem 0;
+}
+
 
 .hero {
     margin: auto 0;
@@ -161,13 +193,32 @@ cta:visited, cta:hover {
     color: white;
 }
 
+/* Description section */
+
 .logo-sales {
     max-width: 15.4rem;
 }
 
+/* Testimonial section */
+
 .testimonial-image {
     max-width: 12.5rem;
     border-radius: 50%;
+}
+
+/* Work in progress */
+
+.wip {
+    margin: auto 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wip h3 {
+    margin-top: 2rem;
 }
 
 @media only screen and (min-width: 64em) { /* Desktop */
