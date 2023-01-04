@@ -273,7 +273,7 @@ btn:visited, btn:hover {
 
 @media only screen and (max-width: 26.5em) { /* Tiny phones */
     section {
-        margin: 15rem 7.5% 0 7.5%;
+        margin: 15rem 15% 15rem 15%;
     }
     .hero h1, .hero h3 {
         padding: 0 7.5%;
