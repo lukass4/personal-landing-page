@@ -198,6 +198,17 @@ cta:visited, cta:hover {
     }
 }
 
+@media only screen and (max-width: 81em) { /* nav cutoff point*/
+    header {
+        margin: 2.5rem 7%;
+        width: calc(100vw - 15%);
+    }
+}
+
+@media only screen and (max-width: 66.75em) { /* nav mobile view */
+
+}
+
 @media only screen and (max-width: 26.5em) { /* Tiny phones */
     section {
         margin: 15rem 7.5% 0 7.5%;
