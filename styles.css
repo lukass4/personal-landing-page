@@ -2,6 +2,10 @@
 
 :root {
     --grad: linear-gradient(107.34deg, #428AF5 4.98%, #9645FE 93.86%);
+    --blue: #428AF5;
+    --purple: #9645FE;
+    --offwhite: #dfdfdf;
+    --offblack: #1b1b1b;
 }
 
 * {
@@ -156,7 +160,8 @@ btn:visited, btn:hover {
 }
 
 .white-btn:hover {
-    background-color: #e4e4e4;
+    background-color: var(--offwhite);
+    color: var(--offblack);
 }
 
 .black-btn {
@@ -169,8 +174,8 @@ btn:visited, btn:hover {
 }
 
 .black-btn:hover {
-    background-color: #1b1b1b;
-    color: #e4e4e4;
+    background-color: var(--offblack);
+    color: var(--offwhite);
 }
 
 /* Hero */
