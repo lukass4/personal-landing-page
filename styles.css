@@ -285,6 +285,12 @@ btn:visited, btn:hover {
     border-radius: 50%;
 }
 
+/* Contact section */
+
+#what-are-you-waiting-for a {
+    color: black;
+}
+
 /* Work in progress */
 
 .wip {
